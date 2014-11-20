@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Portfolios | Lauren Dennis Hair</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Styles + Google Fonts -->
+<link rel="stylesheet" href="/css/jquery.fancybox.css" type="text/css" media="screen" />
+<link rel='stylesheet' href='css/styles.css'>
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Montez'>
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:300,400,700'>
+</head>
+<body>
+  
+  <div class="container" id="top">
+
+    <!--                                       CONTENT
+    ==================================================-->
+    <div class="content">
+    <!--                                        HEADER
+    ==================================================-->
+
+      <!-- Toggle Button -->
+                  
+      <header class="nav-bar">
+        
+        <!-- Social Icons -->
+
+        <div class="soc collapse">
+          <a href="#"><img src="img/facebook.png" alt="" class="img-responsive grayscale" /></a>
+                <a href="#"><img src="img/twitter.png" alt="" class="img-responsive grayscale" /></a>
+                <a href="#"><img src="img/pinterest.png" alt="" class="img-responsive grayscale" /></a>
+                <a href="#"><img src="img/instagram.png" alt="" class="img-responsive grayscale" /></a>
+        </div>
+
+          
+        <!-- Nav Wrapper-->
+
+        <nav class="nav">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    
+                  <!-- Logo -->
+                  <div class="logo">
+                      <a href="index.html"><h1>Portfolios</h1></a>
+                    </div>
+                    <!-- Nav -->
+
+                    <div id="nav" class="nav-menu navbar-collapse collapse clearfix">
+            <ul>
+              <li><a href="index.html" title="Home">Home</a></li>
+              <li><a href="events.html" title="Events Portfolio">Events</a></li>
+              <li><a href="styling.html" title="Styling Portfolio">Styling</a></li>
+              <li><a href="education.html" title="Education Portfolio">Education</a></li>
+              <li><a href="portfolios.html" title="Portfolios">Portfolios</a></li>
+
+            </ul>
+
+          </div>
+
+        </nav>
+
+      </header>
+    <!--                                        BODY
+    ==================================================-->
+      <div class="body">
+    
+    <!--                                    PORTFOLIOS
+    ==================================================-->
+        <section id="portfolios">
+        <hr />
+
+        <div class="heading">
+            <h2>Portfolios</h2>
+          </div>
+
+              <!-- Portfolio Thumb -->
+              <ul class="grid cs-style-3">
+        <li>
+          <figure>
+            <img src="img/portfolios/port1.jpg" alt="img04">
+            <figcaption>
+              <h3>Events</h3>
+              <a href="events.html">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/portfolios/port2.jpg" alt="img01">
+            <figcaption>
+              <h3>Styling</h3>
+              <a href="styling.html">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/portfolios/port3.jpg" alt="img02">
+            <figcaption>
+              <h3>Education</h3>
+              <a href="education.html">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+
+        </section><!-- /#Portfolios -->
+
+
+    <!--                                CLOSE ALL DIVS
+    ==================================================-->
+      </div><!-- /row .body -->
+    </div><!-- /row .content -->
+  </div><!-- /.container --> 
+  <!--                                       SCRIPTS
+  ==================================================-->
+
+<!-- HTML5 Shiv + Placeholder -->
+<script src="js/html5placeholder.jquery.js"></script>
+<script src="js/html5shiv.js"></script>
+
+<!-- jQuery -->
+<script src="js/jquery-1.10.2.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugins-->
+<script src="/js/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="js/jquery.jscrollpane.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/toucheffects.js"></script>
+
+
+<script>
+$( document ).ready(function() {
+    $('#nav').affix({
+}); 
+     $(".fancybox").fancybox({
+    helpers : {
+        overlay : {
+          css : {
+              'background' : 'rgba(0, 0, 0, 0.8)'
+          }
+      }
+    }
+  });
+});
+</script>
+
+
+
+</body>
+</html>

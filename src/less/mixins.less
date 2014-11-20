@@ -1,0 +1,108 @@
+// Custom Grid Mixins 
+
+.content{
+	.make-row();
+	.nav-bar{
+		.make-md-column(3);
+	}
+	.body{
+		.make-md-column(9);
+		.make-md-column-offset(3);
+	}
+}
+
+.about{
+	.make-row();
+	.me{
+		.make-sm-column(8);
+	}
+	.spec{
+		.make-sm-column(4);
+	}
+}
+
+.promos{
+	.make-row();
+	.promo{
+		.make-sm-column(4);
+	}
+}
+
+.portfolios{
+	.make-row();
+	.portfolio{
+		.make-xs-column(4);
+	}
+}
+
+.services{
+	.make-row();
+	.service{
+		.make-sm-column(6);
+	}
+}
+
+.contact{
+	.make-row();
+	.mailform{
+		.make-sm-column(7);
+	}
+	.map{
+		.make-sm-column(5);
+	}
+}
+
+.subfoot{
+	.make-row();
+	.address{
+		.make-md-column(12);
+	}
+	.copyright{
+		.make-md-column(12);
+	}
+}
+
+//Mixins
+
+.glow-text-shadow (@glow-string: 0px 0px 7px rgba(255, 255, 255, 0.7);) {
+	text-shadow: @glow-string;
+}
+
+.text-shadow (@string: 2px 2px 3px rgba(0, 0, 0, 0.5)) {
+	text-shadow: @string;
+}
+
+.box-shadow(@x: 0, @y: 0, @blur: 0, @spread: 0, @color:rgba(0, 0, 0, 0.5)) {
+  -webkit-box-shadow: 	@x @y @blur @spread @color;
+	-moz-box-shadow:    @x @y @blur @spread @color;
+	box-shadow:         @x @y @blur @spread @color;
+}
+
+.inner-box-glow (@x: 0, @y: 0, @blur: 7px, @spread: 1, @color:rgba(150, 150, 150, 0.75)) {
+	-webkit-box-shadow: inset @x @y @blur @spread @color;
+	-moz-box-shadow:    inset @x @y @blur @spread @color;
+	box-shadow:         inset @x @y @blur @spread @color;
+}
+
+.inner-box-shadow (@x: 0, @y: 0, @blur: 7px, @spread: 0, @color:rgba(0, 0, 0, 0.9)) {
+	-webkit-box-shadow: inset @x @y @blur @spread @color;
+	-moz-box-shadow:    inset @x @y @blur @spread @color;
+	box-shadow:         inset @x @y @blur @spread @color;
+}
+
+.brand-inner-shadow (@x: 0, @y: 0, @blur: 7px, @spread: 0, @color: @brand-color-opaic) {
+	-webkit-box-shadow: inset @x @y @blur @spread @color;
+	-moz-box-shadow:    inset @x @y @blur @spread @color;
+	box-shadow:         inset @x @y @blur @spread @color;
+}
+
+.border-radius (@radius) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
